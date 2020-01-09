@@ -1,0 +1,75 @@
+body.app .container{
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 2%;
+}
+/* HEADER */
+header.app{
+    height: 20vh;
+}
+/* paragrafo com o nome do usuario */
+header.app #user-name{
+    color: aliceblue;
+    font-size: 23px; 
+    font-weight: bold;
+}
+/* muda o cursor do mouse ao passar sobre um botao */
+header.app button{
+    cursor: pointer;
+}
+/* define o tamanho da imagem dos botoes */
+header.app .button img{ 
+    width: 80%;
+    float: right;
+}
+header.app .info p{
+    font-size: 17px;
+    margin-left: 20px;
+} 
+/* cor 'quartos ocupados' */
+header.app .info #busy{
+    color: #fd6f61;
+    margin-bottom: 5px;
+} 
+/* cor 'quartos desocupados' */
+header.app .info #free{
+    color: #63fc7f;
+}
+/* grid do cabecalho */
+header.app .grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr;
+    grid-template-rows: 10vh 10vh;
+    grid-template-areas: 'l c r r2' 'b b b b';
+}
+/* botao de menu */
+header.app .grid .left{
+    grid-area: l;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+/* area com o nome do usuario */
+header.app .grid .center{
+    grid-area: c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* primeiro botao de editar */
+header.app .grid .right{
+    grid-area: r;
+    display: flex;
+    align-items: center;
+}
+/* segundo botao de sair */
+header.app .grid .right2{
+    grid-area: r2;
+    display: flex;
+    align-items: center;
+}
+/* area com as quartos disponiveis e ocupados */
+header.app .grid .bottom{
+    grid-area: b;
+}

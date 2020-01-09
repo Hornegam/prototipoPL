@@ -1,0 +1,11 @@
+/* Folha de Estilo da Logo */
+.logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* tamanho do logo na pagina de login */
+.logo img{
+    width: 100%;
+}

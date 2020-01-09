@@ -1,0 +1,66 @@
+/* table calendario */
+#calendarioID{
+    color: #ffffff;
+    font-family: 'Avenir';
+    border: solid 2px #ffffff;
+    padding: 10px 5px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+/* table data com os dias */
+#calendarioID .dia-td{
+    /* width: 45px; */
+    /* height: 45px; */
+    /* border: solid 1px #ffffff; */
+}
+/* fonte do dia */
+#calendarioID .dia-a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* table data com as semanas */
+#calendarioID .semanas-td{
+    width : 50px;
+    height : 25px; 
+    text-align: center;
+}
+/* dias reservados */
+#calendarioID [class*=dia-div-]{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    /* width: 40px; */
+    position: relative;
+    border: none;
+}
+/* dia unico */
+#calendarioID .dia-div-unico{
+    border: solid 2px red;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+/* primeiro dia da reserva */
+#calendarioID .dia-div-inicio{
+    border-top: solid 2px red;
+    border-left: solid 2px red;
+    border-bottom: solid 2px red;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+}
+/* dias subsequentes da reserva */
+#calendarioID .dia-div-meio{
+    border-top: solid 2px red;
+    border-bottom: solid 2px red;
+}
+/* ultimo dia da reserva */
+#calendarioID .dia-div-final{
+    border-top: solid 2px red;
+    border-right: solid 2px red;
+    border-bottom: solid 2px red;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+}

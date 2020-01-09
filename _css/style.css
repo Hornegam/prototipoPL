@@ -1,0 +1,251 @@
+@charset "UFT-8";
+
+/* importacao de outras folhas de estilo */
+@import "login.css";
+@import "logo.css";
+@import "app.css";
+@import "app-main.css";
+@import "modal.css";
+@import "modal-sn.css";
+@import "calendario.css";
+/* faz a importacao das fontes e define um nome chave a elas */
+@font-face{
+    font-family: 'Avenir';
+    src: url(../_font/AvenirNextCyr-Regular.ttf);
+}
+@font-face{
+    font-family: 'Avenir-Demi';
+    src: url("../_font/AvenirNextCyr-Demi.ttf");
+}
+/* reset da pagina */
+*{
+    font-family: 'Avenir',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+/* --------------- */
+body.login{
+    /* imagem de fundo da pagina de login */
+    background-image: url("../_img/Fundo-Login.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 40vh 60vh;
+    grid-template-areas: "logo" "login";
+}
+body.app{
+    /* imagem de fundo do painel */
+    background: url('../_img/Fundo-App.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+                        /* media Query */
+/* -------------------------- LOGIN ------------------------------- */
+/* Dispositivos Super Pequenos (celulares, 600px pra baixo) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Dispositivos Pequenos (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+        
+}
+
+/* Dispositivos Médios (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* muda o tamanho da logo */
+    .logo img{
+        width: 50%;
+    }
+    /* muda o tamanho da fonte */
+    .login #senhaIncorreta{ 
+        font-size: 14px;
+    }
+    .login #esqueceu-senha a{
+        font-size: 14px; 
+    }
+    /* muda a largura dos campos */
+    .login .login-input input{
+        width: 30%;
+    }
+    /* muda o tamanho do icone */
+    .login .login-input-icon{
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+    }
+    /* muda o tamanho do botao */
+    .login #button{
+        padding: 2px 35px;
+        font-size: 20px;        
+    }
+    /* muda a distancia do botao */
+    .login .login-button{
+    margin: 2% 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* muda o tamanho da logo */
+    .logo img{
+        width: 50%;
+    }
+    /* muda o tamanho da fonte */
+    .login #senhaIncorreta{ 
+        font-size: 14px;
+    }
+    .login #esqueceu-senha a{
+        font-size: 14px; 
+    }
+    /* muda a largura dos campos */
+    .login .login-input input{
+        width: 30%;
+    }
+    /* muda o tamanho do icone */
+    .login .login-input-icon{
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+    }
+    /* muda o tamanho do botao */
+    .login #button{
+        padding: 2px 35px;
+        font-size: 20px;        
+    }
+    /* muda a distancia do botao */
+    .login .login-button{
+    margin: 2% 0;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* muda o tamanho da logo */
+    .logo img{
+        width: 30%;
+    }
+    /* muda o tamanho da fonte */
+    .login #senhaIncorreta{ 
+        font-size: 14px;
+    }
+    .login #esqueceu-senha a{
+        font-size: 14px; 
+    }
+    /* muda a largura dos campos */
+    .login .login-input input{
+        width: 20%;
+    }
+    /* muda o tamanho do icone */
+    .login .login-input-icon{
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+    }
+    /* muda o tamanho do botao */
+    .login #button{
+        padding: 2px 35px;
+        font-size: 20px;        
+    }
+    /* muda a distancia do botao */
+    .login .login-button{
+    margin: 2% 0;
+    }
+}
+/* -------------------------- LOGIN END ------------------------------- */
+
+/* -------------------------- APP START ------------------------------- */
+/* Dispositivos Super Pequenos (celulares, 600px pra baixo) */
+@media only screen and (max-width: 600px) {
+    /* sem alteracoes */    
+}
+/* Dispositivos Pequenos (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* sem alteracoes */
+}
+/* Dispositivos Médios (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* padding do container */
+    body.app .container{
+        padding: 0 2%;
+    } 
+    /* muda as fracoes de cada elemento do cabecalho*/
+    header.app .grid{
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr 1fr;
+        grid-template-rows: 10vh 10vh;
+    }
+    /* muda o padding top do container com as suites */
+    main.app .suite-container{
+        padding-top: 0;
+    }
+    /* largura das suites */
+    main.app .suite{
+        width: 29%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    main.app .suite-content{
+        height: 7vh;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body.app .container{
+        padding: 0 2%;
+    } 
+    /* muda as fracoes de cada elemento do cabecalho*/
+    header.app .grid{
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr 1fr;
+        grid-template-rows: 10vh 10vh;
+    }
+    /* muda o padding top do container com as suites */
+    main.app .suite-container{
+        padding-top: 0;
+    }
+    /* largura das suites */
+    main.app .suite{
+        width: 29%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    main.app .suite-content{
+        height: 7vh;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body.app .container{
+        padding: 0 2%;
+    } 
+    /* muda as fracoes de cada elemento do cabecalho*/
+    header.app .grid{
+        display: grid;
+        grid-template-columns: 1fr 20fr 1fr 1fr;
+        grid-template-rows: 10vh 10vh;
+    }
+    /* muda o padding top do container com as suites */
+    main.app .suite-container{
+        padding-top: 0;
+    }
+    /* fonte das suites */
+    main.app .suite p{
+        font-family: 'Avenir',sans-serif;
+    }
+    /* largura das suites */
+    main.app .suite{
+        width: 23%;
+        margin: 10px;
+    }
+}
+/* -------------------------- APP END---------------------------- */
+

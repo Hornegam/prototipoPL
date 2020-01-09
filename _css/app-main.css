@@ -1,0 +1,36 @@
+main.app .suite-container{
+    max-height: 80vh;
+    overflow: auto;
+    padding-top: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+main.app .suite-container::-webkit-scrollbar{
+    display: none;
+}
+main.app .suite{
+     width: 100%;
+     
+     background: linear-gradient(to right,#151926,#21263b);
+     border-radius: 25px;
+     display: inline-block;
+     margin: 0 15px 15px 15px ;
+     
+}
+main.app .suite-content{
+    height: 8vh;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+main.app .suite p{
+    font-family: 'Avenir-Demi';
+    font-size: 23px;
+    color: aliceblue;
+}
+main.app .suite .icon{
+    width: 13%;
+}
+
