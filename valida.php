@@ -17,7 +17,7 @@ if($btnLogin){
     //Filtra novamente informações que chegam do formulario pela bibilioteca do Mysqli
   $usuario = mysqli_real_escape_string(abrirConexao(),$_POST['usuario']);
    $senha = mysqli_real_escape_string(abrirConexao(),$_POST['senha']);
-$consultarLogin = consultar("funcionario", "funcionario_usuario='$usuario' AND funcionario_senha= md5('$senha') AND funcionario_ativo=1","id,funcionario_senha,funcionario_usuario,funcionario_nome, funcionario_cargo");
+$consultarLogin = consultar("funcionario", "funcionario_usuario='$usuario' AND funcionario_senha= '$senha' AND funcionario_ativo=1","id,funcionario_senha,funcionario_usuario,funcionario_nome, funcionario_cargo");
 
 
         if($consultarLogin){
